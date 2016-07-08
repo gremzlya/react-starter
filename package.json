@@ -1,0 +1,71 @@
+{
+  "name": "react-starter",
+  "version": "0.0.1",
+  "description": "react starter kit",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "NODE_ENV=development node server.js",
+    "bundle": "webpack --config ./utils/webpack/productionConfig.js",
+    "test": "NODE_ENV=test karma start karma.conf.js --single-run --reporters mocha,coverage",
+    "test_dev": "NODE_ENV=test karma start karma.conf.js --browsers Chrome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gremzlya/react-starter.git"
+  },
+  "keywords": [
+    "react",
+    "enzyme",
+    "webpack",
+    "hot-reload",
+    "karma",
+    "mocha",
+    "coverage"
+  ],
+  "author": "Vladislav Sinelnikov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gremzlya/react-starter/issues"
+  },
+  "homepage": "https://github.com/gremzlya/react-starter#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-__coverage__": "^11.0.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "chai": "^3.5.0",
+    "enzyme": "^2.3.0",
+    "eslint": "^3.0.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.10.2",
+    "eslint-plugin-jsx-a11y": "^1.5.5",
+    "eslint-plugin-react": "^5.2.2",
+    "json-loader": "^0.5.4",
+    "karma": "^1.1.0",
+    "karma-browser-reporter": "^1.0.1",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-coverage": "^1.1.0",
+    "karma-mocha": "^1.1.1",
+    "karma-mocha-reporter": "^2.0.4",
+    "karma-phantomjs-launcher": "^1.0.1",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^2.5.3",
+    "react": "^15.2.0",
+    "react-addons-test-utils": "^15.2.0",
+    "react-dom": "^15.2.0",
+    "react-hot-loader": "^3.0.0-beta.2",
+    "webpack": "^1.13.1",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.4.1"
+  },
+  "nyc": {
+    "exclude": [
+      "**/*.spec.js"
+    ]
+  }
+}
